@@ -1,0 +1,2072 @@
+/* Reset & Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f6fdf5;
+    color: #333;
+  }
+  
+  /* Navbar */
+  nav {
+    background-color: #2e7d32;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav h1 {
+    font-size: 1.8rem;
+  }
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  nav li {
+    cursor: pointer;
+    font-weight: 500;
+  }
+  
+  /* Hero Section */
+  .hero {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-image: url('bg.jpeg'); /* optional */
+    background-size: cover;
+    background-position: center;
+    color: #2e7d32;
+  }
+  .hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+  .hero button {
+    background-color: #388e3c;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  /* Dashboard Section */
+  .dashboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2rem;
+    gap: 2rem;
+  }
+  .weather, .crops {
+    flex: 1 1 300px;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  }
+  .weather input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+  }
+  #weather-display {
+    padding: 1rem;
+    background-color: #e8f5e9;
+    border-radius: 5px;
+  }
+  
+  .crops h3 {
+    margin-bottom: 0.5rem;
+  }
+  #crop-list li {
+    background-color: #c8e6c9;
+    padding: 0.5rem;
+    margin: 0.3rem 0;
+    border-radius: 4px;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #2e7d32;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  color: #4CAF50;
+}
+
+a {
+  text-decoration: none;
+  color: #4CAF50;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Header Navigation */
+header {
+  background-color: #4CAF50;
+  padding: 20px 0;
+}
+
+nav h1 {
+  color: white;
+  text-align: center;
+  font-size: 2.5em;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 10px 0;
+  margin-top: 10px;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+
+nav ul li a:hover {
+  color: #f0f0f0;
+}
+
+/* Hero Section */
+.hero {
+  /* background-color: #4CAF50; */
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h2 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.5em;
+  margin-bottom: 30px;
+}
+
+.hero button {
+  padding: 15px 30px;
+  font-size: 1.2em;
+  background-color: #f0f0f0;
+  color: #4CAF50;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hero button:hover {
+  background-color: #d1d1d1;
+}
+
+/* Info Section */
+.info-section {
+  padding: 40px 20px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.info-section h2 {
+  margin-bottom: 20px;
+  font-size: 2.5em;
+}
+
+.info-section p, .info-section ul {
+  font-size: 1.1em;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Features List */
+.info-section ul {
+  list-style-type: none;
+}
+
+.info-section ul li {
+  padding: 10px 0;
+}
+
+/* CTA Section */
+.cta {
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.cta h3 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.cta button {
+  padding: 15px 30px;
+  font-size: 1.2em;
+  background-color: #f0f0f0;
+  color: #4CAF50;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cta button:hover {
+  background-color: #d1d1d1;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  font-size: 1em;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin-bottom: 10px;
+  }
+
+  .hero h2 {
+    font-size: 2.5em;
+  }
+
+  .hero p {
+    font-size: 1.3em;
+  }
+
+  .info-section h2 {
+    font-size: 2.2em;
+  }
+
+  .cta h3 {
+    font-size: 2.2em;
+  }
+
+  .info-section p, .info-section ul {
+    font-size: 1em;
+    max-width: 100%;
+  }
+
+  .cta button {
+    font-size: 1em;
+    padding: 12px 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  nav h1 {
+    font-size: 2em;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  .hero h2 {
+    font-size: 2em;
+  }
+
+  .hero p {
+    font-size: 1.2em;
+  }
+
+  .cta h3 {
+    font-size: 1.8em;
+  }
+
+  .info-section h2 {
+    font-size: 2em;
+  }
+
+  .cta button {
+    padding: 10px 20px;
+    font-size: 1em;
+  }
+
+  footer p {
+    font-size: 0.9em;
+  }
+}
+/* About Section Styling */
+#about {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+#about h2 {
+  color: #4CAF50;
+  font-size: 2.8em;
+  margin-bottom: 30px;
+}
+
+#about p {
+  font-size: 1.1em;
+  max-width: 900px;
+  margin: 15px auto;
+  line-height: 1.8;
+  color: #333;
+}
+
+#about ul {
+  list-style: none;
+  padding: 0;
+  margin: 30px auto;
+  max-width: 700px;
+  text-align: left;
+}
+
+#about ul li {
+  font-size: 1.1em;
+  margin: 12px 0;
+  padding-left: 25px;
+  position: relative;
+}
+
+#about ul li::before {
+  content: "🌱";
+  position: absolute;
+  left: 0;
+  font-size: 1.2em;
+}
+
+/* Customize Emojis */
+#about ul li:nth-child(1)::before { content: "📍"; }
+#about ul li:nth-child(2)::before { content: "📊"; }
+#about ul li:nth-child(3)::before { content: "💡"; }
+#about ul li:nth-child(4)::before { content: "🧠"; }
+#about ul li:nth-child(5)::before { content: "🌿"; }
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+  #about h2 {
+    font-size: 2.2em;
+  }
+
+  #about p, #about ul li {
+    font-size: 1em;
+  }
+}
+/* Register Page Styles */
+.register-container {
+  max-width: 400px;
+  margin: 80px auto;
+  padding: 40px 30px;
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.register-container h2 {
+  font-size: 2em;
+  color: #4CAF50;
+  margin-bottom: 10px;
+}
+
+.register-container p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.register-form input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+}
+
+.register-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 1em;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.register-form button:hover {
+  background-color: #45a049;
+}
+
+.login-link {
+  margin-top: 15px;
+  font-size: 0.9em;
+}
+.login-link a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: url('bg.jpeg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: Arial, sans-serif;
+}
+
+.register-container {
+  background-color: rgba(255, 255, 255, 0.9); /* Optional: white transparent background for readability */
+  max-width: 400px;
+  margin: 100px auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  text-align: center;
+}
+
+.login-container {
+  background-color: rgba(255, 255, 255, 0.9); /* semi-transparent white */
+  max-width: 400px;
+  margin: 100px auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  text-align: center;
+}
+.register-container {
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.2); /* Light transparent white */
+  max-width: 400px;
+  margin: 100px auto;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2); /* Softer, deeper shadow */
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Subtle border for better visibility */
+}
+.register-container h2,
+.register-container p {
+  color: #fff;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+.register-form input {
+  background-color: rgba(255, 255, 255, 0.85);
+  color: #333;
+  border: 1px solid #ddd;
+}
+
+.register-form button {
+  background-color: #4CAF50;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(76, 175, 80, 0.3);
+}
+/* Footer */
+footer {
+  background-color: #000; /* Black background */
+  color: #fff; /* White text */
+  text-align: center;
+  padding: 20px;
+  font-size: 0.95em;
+  margin-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Optional: Add spacing from the content above */
+body > *:not(footer) {
+  margin-bottom: 20px;
+}
+.register-header {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #2c7a7b; /* Elegant green-blue */
+  text-align: center;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(90deg, #48bb78, #38a169, #2f855a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: fadeInDown 0.8s ease-in-out;
+  letter-spacing: 1px;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.header-icon img {
+  display: block;
+  margin: 0 auto;
+  width: 40px;
+  animation: popIn 0.6s ease-in-out;
+}
+
+@keyframes popIn {
+  from {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.subtext {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #4a5568; /* soft gray for readability */
+  margin-top: 0.2rem;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+  font-style: italic;
+  letter-spacing: 0.5px;
+  position: relative;
+  animation: fadeSlideUp 1s ease-in-out;
+}
+
+/* Decorative underline effect */
+.subtext::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(to right, #48bb78, #38a169);
+  margin: 0.4rem auto 0;
+  border-radius: 5px;
+}
+
+/* Slide and fade animation */
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.fancy-input {
+  width: 100%;
+  padding: 12px 15px;
+  font-size: 1rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  outline: none;
+  background-color: #f7fafc;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.fancy-input::placeholder {
+  color: #718096;
+  font-style: italic;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+.fancy-input:focus {
+  border-color: #38a169;
+  box-shadow: 0 0 0 3px rgba(56, 161, 105, 0.3);
+}
+
+.fancy-input:focus::placeholder {
+  color: #a0aec0;
+}
+/* Animate form slide-in */
+.register-form {
+  animation: slideInUp 1s ease-in-out;
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Input styles with animations */
+.fancy-input {
+  width: 100%;
+  padding: 12px 15px;
+  font-size: 1rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  background-color: #f7fafc;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: 
+    border-color 0.3s ease, 
+    box-shadow 0.3s ease, 
+    transform 0.3s ease;
+  animation: fadeInInput 0.8s ease-in-out forwards;
+  opacity: 0;
+}
+
+.fancy-input:nth-child(1) { animation-delay: 0.3s; }
+.fancy-input:nth-child(2) { animation-delay: 0.4s; }
+.fancy-input:nth-child(3) { animation-delay: 0.5s; }
+.fancy-input:nth-child(4) { animation-delay: 0.6s; }
+
+@keyframes fadeInInput {
+  from {
+    transform: translateY(15px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.fancy-input::placeholder {
+  color: #718096;
+  font-style: italic;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+.fancy-input:focus {
+  border-color: #38a169;
+  box-shadow: 0 0 0 3px rgba(56, 161, 105, 0.3);
+  transform: scale(1.02);
+}
+
+.fancy-input:focus::placeholder {
+  color: #a0aec0;
+}
+
+body {
+  cursor: url('images/leaf-cursor.png'), auto; /* fallback to normal */
+}
+
+input, button {
+  cursor: pointer;      /* when hovering inputs/buttons */
+}
+body {
+  cursor: url('leaf-cursor.png'), auto;
+}
+body {
+  cursor: url('leaf-cursor.png'), auto;
+}
+button {
+  cursor: url('leaf-cursor.png'), pointer;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: url('bg.jpeg') no-repeat center center/cover;
+  background-attachment: fixed; /* optional: background stays fixed while scrolling */
+}
+/* Style for Contact Section */
+#contact {
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+  border-radius: 12px;
+  margin: 40px auto;
+  max-width: 800px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#contact h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #2e7d32; /* nice green color */
+}
+
+#contact p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+#contact ul {
+  list-style: none;
+  padding: 0;
+}
+
+#contact li {
+  margin: 10px 0;
+  font-size: 1.1rem;
+}
+
+#contact a {
+  color: #2e7d32;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+/* Dashboard Section */
+.dashboard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px 20px;
+  background-color: #f0f8f5;
+}
+
+/* Individual Box Styles */
+.weather, .crops {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  padding: 30px 20px;
+  width: 300px;
+  text-align: center;
+}
+
+.weather h3, .crops h3 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #2e7d32;
+}
+
+#location-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+#weather-display {
+  font-size: 1rem;
+  margin-top: 10px;
+  color: #555;
+}
+
+#crop-list {
+  list-style: none;
+  padding: 0;
+}
+
+#crop-list li {
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 1.1rem;
+  color: #444;
+}
+body {
+  cursor: url('images/cursor1.png'), auto;
+}
+body {
+  cursor: pointer; /* hand cursor */
+}
+
+
+
+input {
+  cursor: text; /* text select cursor on input */
+}
+@keyframes slideDown {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Apply it to any element */
+.animate-down {
+  animation: slideDown 1s ease-out forwards;
+}
+.animate-down {
+  animation: slideDown 1s ease-out forwards;
+  background: linear-gradient(90deg, #4caf50, #81c784);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.animate-down {
+  animation: slideDown 1s ease-out forwards;
+  color: #2e7d32; /* Rich farm green */
+}
+@keyframes fallDown {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Animate each crop */
+#crop-list li {
+  animation: fallDown 0.8s ease forwards;
+  opacity: 0; /* Start hidden */
+  position: relative;
+}
+
+/* Stagger the falling (one after another) */
+#crop-list li:nth-child(1) {
+  animation-delay: 0.2s;
+}
+#crop-list li:nth-child(2) {
+  animation-delay: 0.4s;
+}
+#crop-list li:nth-child(3) {
+  animation-delay: 0.6s;
+}
+#crop-list li:nth-child(4) {
+  animation-delay: 0.8s;
+}
+#crop-list li:nth-child(5) {
+  animation-delay: 1s;
+}
+body {
+  cursor: url('images/cursor1.png'), auto;
+}
+.hero {
+  background-image: url('bg.jpeg'); /* Path to your image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh; /* makes it full screen height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white; /* Text color so it’s visible */
+  text-align: center;
+  padding: 2rem;
+}
+.hero {
+  background-image: url('bg.jpeg');
+}
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Body Styling */
+body {
+  background-color: #f4f4f4;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.5;
+  transition: background 0.3s ease;
+}
+
+/* Header and Navigation Styling */
+header {
+  background: rgba(0, 0, 0, 0.7); /* Transparent background for header */
+  padding: 20px 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+nav h1 {
+  color: #fff;
+  font-size: 2em;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+  background: #ff6347;
+  border-radius: 5px;
+  color: white;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('hero-image.jpg') center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+  margin-bottom: 40px;
+}
+
+.hero h2 {
+  font-size: 3em;
+  margin-bottom: 10px;
+  animation: fadeIn 2s ease-in-out;
+  font-weight: bold;
+}
+
+.hero p {
+  font-size: 1.3em;
+  margin-bottom: 20px;
+}
+
+/* Registration Success Message */
+#registration-success {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 40px;
+  border-radius: 10px;
+  color: #fff;
+  margin: 20px;
+  display: none;
+  animation: fadeInUp 1.5s ease-out;
+}
+
+#registration-success h2 {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#registration-success p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+/* About Section */
+.info-section {
+  padding: 60px 20px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+  border-radius: 10px;
+}
+
+.info-section h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  animation: fadeIn 2s ease-in-out;
+  font-weight: bold;
+}
+
+.info-section p {
+  font-size: 1.2em;
+}
+
+/* Features Section */
+#features {
+  padding: 40px 20px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+#features h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  animation: fadeIn 2s ease-in-out;
+  font-weight: bold;
+}
+
+#features ul {
+  list-style: none;
+  font-size: 1.2em;
+}
+
+#features ul li {
+  margin-bottom: 15px;
+}
+
+#features ul li strong {
+  font-weight: bold;
+}
+
+#features ul li:hover {
+  color: #ff6347;
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+/* Contact Section */
+#contact {
+  padding: 40px 20px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+  border-radius: 10px;
+}
+
+#contact h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  animation: fadeIn 2s ease-in-out;
+  font-weight: bold;
+}
+
+#contact p {
+  font-size: 1.2em;
+}
+
+#contact ul {
+  list-style: none;
+  font-size: 1.1em;
+}
+
+#contact ul li {
+  margin-bottom: 15px;
+}
+
+#contact ul li a {
+  text-decoration: none;
+  color: #ff6347;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+#contact ul li a:hover {
+  color: #e5533d;
+  text-decoration: underline;
+}
+
+/* Footer Styling */
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+  font-size: 1.1em;
+  color: #333;
+  animation: fadeIn 2s ease-in-out;
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Body Styling */
+body {
+  background-color: #f4f4f4;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.5;
+  transition: background 0.3s ease;
+}
+
+/* Header and Navigation Styling */
+header {
+  background: rgba(0, 0, 0, 0.7); /* Transparent background for header */
+  padding: 20px 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+nav h1 {
+  color: #fff;
+  font-size: 2em;
+  letter-spacing: 1px;
+  font-weight: bold;
+  animation: headerAnimation 1s ease-in-out;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  transition: all 0.3s ease;
+  background: linear-gradient(to right, #006400, #3cb371); /* Dark Green to Teal for hover */
+  border-radius: 5px;
+}
+
+nav ul li a:hover {
+  background: linear-gradient(to right, #3cb371, #006400); /* Inverted gradient for hover */
+  color: white;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('hero-image.jpg') center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+  margin-bottom: 40px;
+  border-radius: 10px;
+}
+
+.hero h2 {
+  font-size: 3em;
+  margin-bottom: 10px;
+  animation: fadeIn 2s ease-in-out, slideIn 1s ease-in-out;
+  font-weight: bold;
+  background: linear-gradient(to left, #006400, #3cb371); /* Dark Green to Teal gradient */
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.hero p {
+  font-size: 1.3em;
+  margin-bottom: 20px;
+}
+
+/* Registration Success Message */
+#registration-success {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 40px;
+  border-radius: 10px;
+  color: #fff;
+  margin: 20px;
+  display: none;
+  animation: fadeInUp 1.5s ease-out;
+}
+
+#registration-success h2 {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  animation: headerAnimation 1s ease-in-out;
+  background: linear-gradient(to left, #006400, #3cb371);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+#registration-success p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+/* About Section */
+.info-section {
+  padding: 60px 20px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+  border-radius: 10px;
+}
+
+.info-section h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  animation: fadeIn 2s ease-in-out, headerAnimation 1s ease-in-out;
+  font-weight: bold;
+  background: linear-gradient(to left, #006400, #3cb371); /* Dark Green to Teal gradient */
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.info-section p {
+  font-size: 1.2em;
+}
+
+/* Features Section */
+#features {
+  padding: 40px 20px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+#features h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  animation: fadeIn 2s ease-in-out, headerAnimation 1s ease-in-out;
+  font-weight: bold;
+  background: linear-gradient(to left, #006400, #3cb371); /* Dark Green to Teal gradient */
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+#features ul {
+  list-style: none;
+  font-size: 1.2em;
+}
+
+#features ul li {
+  margin-bottom: 15px;
+}
+
+#features ul li strong {
+  font-weight: bold;
+}
+
+#features ul li:hover {
+  color: #006400;
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+/* Contact Section */
+#contact {
+  padding: 40px 20px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+  border-radius: 10px;
+}
+
+#contact h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  animation: fadeIn 2s ease-in-out, headerAnimation 1s ease-in-out;
+  font-weight: bold;
+  background: linear-gradient(to left, #006400, #3cb371); /* Dark Green to Teal gradient */
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+#contact p {
+  font-size: 1.2em;
+}
+
+#contact ul {
+  list-style: none;
+  font-size: 1.1em;
+}
+
+#contact ul li {
+  margin-bottom: 15px;
+}
+
+#contact ul li a {
+  text-decoration: none;
+  color: #006400;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+#contact ul li a:hover {
+  color: #3cb371;
+  text-decoration: underline;
+}
+
+/* Footer Styling */
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+  font-size: 1.1em;
+  color: #333;
+  animation: fadeIn 2s ease-in-out;
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes headerAnimation {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+/* FarmSmart Logo Styling */
+nav h1 {
+  color: #50C878; /* Emerald Green */
+  font-size: 2.5em;
+  letter-spacing: 2px;
+  font-weight: bold;
+  animation: farmSmartLogoAnimation 1.5s ease-in-out; /* Add animation to the logo */
+  text-transform: uppercase; /* Uppercase styling for the logo */
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  position: relative;
+}
+
+/* Animation for the "FarmSmart" Logo */
+@keyframes farmSmartLogoAnimation {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+/* FarmSmart Logo Styling */
+nav h1 {
+  color: #50C878; /* Emerald Green */
+  font-size: 2.5em;
+  letter-spacing: 2px;
+  font-weight: bold;
+  animation: farmSmartLogoAnimation 1.5s ease-in-out, colorPulse 3s infinite; /* Animation on page load and color pulse */
+  text-transform: uppercase; /* Uppercase styling for the logo */
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  cursor: pointer; /* Make it interactive */
+  transition: transform 0.3s ease-in-out; /* Smooth transition on hover */
+}
+
+/* Keyframe for Bouncing and Scaling */
+@keyframes farmSmartLogoAnimation {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Color Pulse Animation (Subtle color change over time) */
+@keyframes colorPulse {
+  0% {
+    color: #50C878; /* Emerald Green */
+  }
+  50% {
+    color: #39B54A; /* Lighter green */
+  }
+  100% {
+    color: #50C878; /* Emerald Green */
+  }
+}
+
+/* Hover Effect for Interactive Look */
+nav h1:hover {
+  transform: scale(1.1) rotate(3deg); /* Slight rotation and scaling when hovered */
+  color: #2E8B57; /* Darker shade of green for hover */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Adding a text shadow for emphasis */
+  animation: none; /* Stop color pulse on hover for cleaner look */
+}
+
+/* Hover Animation for Bounce Effect */
+nav h1:hover {
+  animation: bounceEffect 0.6s ease forwards;
+}
+
+@keyframes bounceEffect {
+  0% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(1.2);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  70% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/* Global Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Body Styling */
+body {
+  background-color: #f8f8f8;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Header Styling */
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+header h1 {
+  font-size: 3em;
+  color: #28a745; /* FarmGreen color */
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: bold;
+  animation: headerAnimation 2s ease-out infinite alternate;
+}
+
+/* Header Animation */
+@keyframes headerAnimation {
+  0% {
+    color: #28a745;
+  }
+  50% {
+    color: #1c7430; /* Darker Green */
+  }
+  100% {
+    color: #28a745;
+  }
+}
+
+/* Product Grid Styling */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  margin-top: 20px;
+  padding: 0 10px;
+}
+
+/* Product Card Styling */
+.product-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+}
+
+.product-card h2 {
+  font-size: 1.5em;
+  margin-top: 15px;
+  color: #333;
+  font-weight: bold;
+}
+
+.product-card p {
+  color: #666;
+  margin: 10px 0;
+}
+
+.product-card a {
+  display: inline-block;
+  background-color: #28a745;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.product-card a:hover {
+  background-color: #1c7430;
+  transform: scale(1.05);
+}
+
+/* Hover Effect on Product Card */
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.product-card:hover img {
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2.5em;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  }
+
+  .product-card {
+    max-width: 250px;
+  }
+}
+
+/* Footer Styling (Optional if needed) */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #28a745;
+  color: #fff;
+}
+/* Footer Social Media Links and Copyright Styling */
+footer {
+  background: transparent;  /* Keep the existing background */
+  color: #fff;
+  padding: 30px 0;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+/* Copyright Styling */
+footer p:first-child {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+  color: #ffb347; /* Bright color for visibility */
+}
+
+/* Social Media Links Styling */
+footer ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 15px;
+}
+
+footer ul li a {
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: bold;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+footer ul li a:hover {
+  color: #ffb347; /* Bright color on hover */
+  transform: scale(1.1); /* Slight grow effect on hover */
+}
+
+footer ul li a:visited {
+  color: #f0f0f0; /* Light color after visiting */
+}
+
+/* Adding spacing and alignment to footer links */
+footer ul li {
+  display: inline;
+}
+/* Footer Styling */
+footer {
+  background: transparent;  /* Keep the existing background */
+  color: #fff;
+  padding: 40px 0;
+  text-align: center;
+  position: relative;
+}
+
+footer p {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+/* Copyright Styling */
+footer p:first-child {
+  font-weight: bold;
+  font-size: 2rem; /* Increased size for better visibility */
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  color: #ff4500; /* Bright and contrasting color */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6); /* Add shadow for contrast */
+}
+
+/* Social Media Links Styling */
+footer ul {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 20px;
+}
+
+footer ul li a {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-transform: uppercase; /* Make text stand out more */
+  letter-spacing: 2px;
+  transition: color 0.3s ease, transform 0.3s ease, text-shadow 0.3s ease;
+  text-decoration: none; /* Remove underline */
+  position: relative;
+}
+
+/* Hover Effect for Social Links */
+footer ul li a:hover {
+  color: #ff4500; /* Bright color on hover */
+  transform: scale(1.2); /* Slight grow effect on hover */
+  text-shadow: 0px 0px 10px rgba(255, 69, 0, 0.7); /* Glowing effect */
+}
+
+footer ul li a:visited {
+  color: #f0f0f0; /* Light color after visiting */
+}
+
+/* Spacing and alignment to footer links */
+footer ul li {
+  display: inline;
+  padding: 10px;
+}
+
+/* Responsive Design for Smaller Screens */
+@media screen and (max-width: 768px) {
+  footer p:first-child {
+    font-size: 1.5rem;
+  }
+
+  footer ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  footer ul li a {
+    font-size: 1.4rem;
+  }
+}
+/* Styling for 'Developed with 💚 for smarter farming.' */
+footer p:last-child {
+  font-size: 1.4rem; /* Increased font size for visibility */
+  color: #ff6347; /* Bright tomato color for contrast */
+  font-weight: bold; /* Bold text to make it stand out */
+  text-transform: uppercase; /* Make the text stand out more */
+  letter-spacing: 1px; /* Space out letters for better legibility */
+  margin-top: 10px;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5); /* Adding shadow for contrast */
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+/* Hover Effect for the 'Developed with 💚' Text */
+footer p:last-child:hover {
+  color: #32cd32; /* Bright lime green color on hover */
+  text-shadow: 0 0 15px rgba(50, 205, 50, 0.7); /* Glowing green shadow effect */
+}
+/* Container to hold the box */
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Styling for the weather and crop prediction box */
+#weather-crop-box {
+  width: 400px;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+h2 {
+  color: #333;
+  font-size: 1.5em;
+  margin-bottom: 15px;
+}
+
+input[type="text"] {
+  width: 80%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#weather-info, #crop-info {
+  margin-top: 20px;
+}
+
+#weather-details, #crop-details {
+  color: #666;
+  font-size: 1.2em;
+}
+/* Style for the container holding both boxes */
+.container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+/* Style for the individual boxes */
+.box {
+  width: 45%; /* Make the boxes take up 45% of the container's width */
+  border: 2px solid #4CAF50; /* Green border for the box */
+  padding: 20px;
+  border-radius: 8px; /* Rounded corners for the box */
+  background-color: #f9f9f9; /* Light background color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+/* Styling for the title of each box */
+.box h2 {
+  text-align: center;
+  color: #4CAF50; /* Green color for the title */
+}
+
+/* Label styling */
+label {
+  font-weight: bold;
+}
+
+/* Input field styling */
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd; /* Light border color */
+  border-radius: 5px; /* Rounded corners for input field */
+}
+
+/* Button styling */
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50; /* Green background for the button */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Button hover effect */
+button:hover {
+  background-color: #45a049; /* Darker green when hovering */
+}
+
+/* Styling for weather and crop info output */
+#weather-info, #crop-info {
+  margin-top: 15px;
+  font-size: 16px;
+}
+
+/* Font styling for weather details and crop recommendation */
+#weather-details, #crop-details {
+  font-size: 16px;
+  font-weight: bold;
+}
+/* Additional spacing for the sections */
+#about, #features {
+  margin-top: 40px; /* Adds space above the section */
+  margin-bottom: 40px; /* Adds space below the section */
+  padding: 20px; /* Optional: Add padding for extra spacing inside the sections */
+}
+
+/* Optional: Style for h2 inside sections for consistency */
+#about h2, #features h2 {
+  margin-bottom: 20px; /* Adds space below the title */
+}
+
+/* Optional: Add some padding to the content inside the sections */
+#about p, #features ul {
+  font-size: 16px;
+  line-height: 1.6;
+}
+.box {
+  width: 700x;  /* Increased width */
+}
+.box {
+  height:300px; /* Increased height */
+}
+@keyframes popUp {
+  0% {
+    transform: scale(0.5);  /* Start smaller */
+    opacity: 0;  /* Start invisible */
+  }
+  60% {
+    transform: scale(1.05);  /* Slightly overshoot the size */
+    opacity: 1;  /* Become visible */
+  }
+  100% {
+    transform: scale(1);  /* Set final size */
+    opacity: 1;  /* Fully visible */
+  }
+}
+/* Social Media Links - Add Blinking Effect on Hover */
+.social-link {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.social-link:hover {
+  color: orange;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0% {
+    color: orange;
+  }
+  50% {
+    color: transparent;
+  }
+  100% {
+    color: orange;
+  }
+}
+/* Social Media Links - Falling Down Animation */
+.social-link {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: transform 0.5s ease, color 0.3s ease;
+}
+
+.social-link:hover {
+  color: orange;
+  animation: fall 1s ease-in-out;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-30px); /* Start 30px above */
+    opacity: 0; /* Start invisible */
+  }
+  50% {
+    transform: translateY(10px); /* Move down */
+    opacity: 1; /* Fully visible */
+  }
+  100% {
+    transform: translateY(0); /* End at normal position */
+  }
+}
+/* Social Media Links - Add Blinking Effect on Hover */
+.social-link {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.social-link:hover {
+  color: orange;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0% {
+    color: orange;
+  }
+  50% {
+    color: transparent;
+  }
+  100% {
+    color: orange;
+  }
+}

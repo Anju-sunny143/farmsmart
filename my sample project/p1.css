@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #f5fff5;
+  color: #2e7d32;
+}
+
+header {
+  text-align: center;
+  padding: 2rem;
+  background-color: #a5d6a7;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.product-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #c8e6c9;
+  box-shadow: 0 2px 8px rgba(0, 128, 0, 0.1);
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 128, 0, 0.2);
+}
+
+.product-card img {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.product-card h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #1b5e20;
+}
+
+.product-card p {
+  font-size: 0.95rem;
+  color: #4caf50;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: url('bg.jpeg') no-repeat center center/cover;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: linear-gradient(to right, rgba(224, 247, 250, 0.8), rgba(232, 245, 233, 0.8)), 
+              url('bg.jpeg') no-repeat center center/cover;
+}
+header {
+  background: linear-gradient(135deg, #4caf50, #2e7d32);
+  color: white;
+  text-align: center;
+  padding: 40px 0;
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  position: relative;
+}
+
+header::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 5px;
+  background: white;
+  border-radius: 5px;
+}
+/* Header Styling */
+header {
+  text-align: center;
+  margin-bottom: 50px;
+  padding: 50px 0;
+}
+
+/* FarmSmart Header Animation */
+header h1 {
+  font-size: 4em;
+  color: #4CAF50; /* Green */
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  font-weight: 900; /* Bold */
+  animation: headerAnimation 3s ease-in-out infinite alternate;
+  transition: all 0.3s ease;
+}
+
+/* Header Animation */
+@keyframes headerAnimation {
+  0% {
+    color: #4CAF50; /* Green */
+    transform: scale(1);
+  }
+  50% {
+    color: #1e7033; /* Darker Green */
+    transform: scale(1.1);
+  }
+  100% {
+    color: #4CAF50; /* Green */
+    transform: scale(1);
+  }
+}
+/* Header Styling */
+header {
+  text-align: center;
+  margin-bottom: 50px;
+  padding: 40px 0;
+}
+
+/* FarmSmart Header Animation */
+header h1 {
+  font-size: 3em;  /* Reduced size for a more compact header */
+  color: #2E8B57;  /* Muted green for a softer effect */
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: 800; /* Bold but not overpowering */
+  animation: headerAnimation 2s ease-in-out infinite alternate;
+  transition: all 0.3s ease;
+}
+
+/* Header Animation */
+@keyframes headerAnimation {
+  0% {
+    color: #2E8B57; /* Muted Green */
+    transform: scale(1);
+  }
+  50% {
+    color: #3CB371; /* Slightly brighter green */
+    transform: scale(1.05);
+  }
+  100% {
+    color: #2E8B57; /* Back to muted green */
+    transform: scale(1);
+  }
+}
+/* Header Styling */
+header {
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 20px 0;
+}
+
+/* FarmSmart Header Animation */
+header h1 {
+  font-size: 2.5em;  /* Reduced size for a smaller, more compact header */
+  color: #2E8B57;  /* Muted green for a softer effect */
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 700; /* Bold but more subtle */
+  animation: headerAnimation 2.5s ease-in-out infinite alternate;
+  transition: all 0.3s ease;
+}
+
+/* Header Animation */
+@keyframes headerAnimation {
+  0% {
+    color: #2E8B57; /* Muted Green */
+    transform: scale(1);
+  }
+  50% {
+    color: #3CB371; /* Slightly brighter green */
+    transform: scale(1.03); /* Slightly smaller scale for a more subtle effect */
+  }
+  100% {
+    color: #2E8B57; /* Back to muted green */
+    transform: scale(1);
+  }
+}

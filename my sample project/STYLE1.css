@@ -1,0 +1,384 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #e0f7fa, #e8f5e9);
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #388e3c;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+main {
+  padding: 2rem;
+  animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.weather-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.weather-box {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  padding: 1.5rem;
+  width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.weather-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.3);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #c8e6c9;
+  margin-top: 2rem;
+}
+
+#location-input {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+#location-input input {
+  padding: 0.5rem;
+  width: 250px;
+  font-size: 1rem;
+}
+
+#location-input button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: #388e3c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.weather-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    background-image: url('https://images.unsplash.com/photo-1501630834273-4b5604d2ee31.jpeg'); /* Replace with your chosen image URL */
+    background-size: cover;
+    background-position: center;
+    padding: 2rem;
+    border-radius: 20px;
+  }
+  /* General Body Styling */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: url('https://images.unsplash.com/photo-1501630834273-4b5604d2ee31') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    animation: fadeInBody 1.5s ease;
+  }
+  
+  /* Header */
+  header {
+    background: rgba(56, 142, 60, 0.8);
+    color: white;
+    padding: 1.2rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  }
+  
+  /* Section Title */
+  .glassy-heading {
+    text-align: center;
+    font-size: 3rem;
+    color: #fff;
+    padding: 1rem 3rem;
+    margin: 2rem auto;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+    animation: floatGlass 3s ease-in-out infinite;
+    width: fit-content;
+  }
+  
+  /* Location Input */
+  #location-input {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  #location-input input {
+    padding: 0.6rem;
+    width: 280px;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    backdrop-filter: blur(6px);
+    background: rgba(255, 255, 255, 0.15);
+    color: #fff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  }
+  
+  #location-input input::placeholder {
+    color: #ddd;
+  }
+  
+  #location-input button {
+    margin-left: 1rem;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    background-color: rgba(56, 142, 60, 0.9);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #location-input button:hover {
+    background-color: #2e7d32;
+  }
+  
+  /* Weather Boxes */
+  .weather-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    animation: fadeInUp 2s ease;
+  }
+  
+  .weather-box {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+    padding: 1.5rem;
+    width: 300px;
+    color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .weather-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.4);
+  }
+  
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: rgba(200, 230, 201, 0.3);
+    backdrop-filter: blur(4px);
+    margin-top: 2rem;
+    color: #fff;
+  }
+  
+  /* Animations */
+  @keyframes fadeInBody {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes floatGlass {
+    0%, 100% {
+      transform: translateY(0px);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+    }
+    50% {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+    }
+  }
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: url('https://images.unsplash.com/photo-1501630834273-4b5604d2ee31') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    transform: scale(0.95); /* Zoom out */
+    transform-origin: top center;
+  }
+  
+  header {
+    background: rgba(56, 142, 60, 0.75);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .glassy-heading {
+    text-align: center;
+    font-size: 2.2rem;
+    padding: 0.8rem 2rem;
+    margin: 1.5rem auto;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.3);
+    animation: floatGlass 3s ease-in-out infinite;
+    width: fit-content;
+  }
+  
+  #location-input input {
+    font-size: 0.9rem;
+    width: 240px;
+    padding: 0.5rem;
+  }
+  
+  #location-input button {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+  
+  .weather-box {
+    font-size: 0.9rem;
+    padding: 1.2rem;
+    width: 280px;
+  }
+  
+  .weather-box h3 {
+    font-size: 1.2rem;
+  }
+  
+  footer {
+    font-size: 0.9rem;
+    padding: 0.8rem;
+  }
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: url('https://images.unsplash.com/photo-1501630834273-4b5604d2ee31') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    transform: scale(0.95); /* Zoom out */
+    transform-origin: top center;
+  }
+  
+  header {
+    background: rgba(56, 142, 60, 0.75);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .glassy-heading {
+    text-align: center;
+    font-size: 2.2rem;
+    padding: 0.8rem 2rem;
+    margin: 1.5rem auto;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.3);
+    animation: floatGlass 3s ease-in-out infinite;
+    width: fit-content;
+  }
+  
+  #location-input input {
+    font-size: 0.9rem;
+    width: 240px;
+    padding: 0.5rem;
+  }
+  
+  #location-input button {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+  
+  .weather-box {
+    font-size: 0.9rem;
+    padding: 1.2rem;
+    width: 280px;
+    font-weight: bold; /* Make font bold */
+    color: black; /* Change font color to black */
+  }
+  
+  .weather-box h3 {
+    font-size: 1.2rem;
+  }
+  
+  footer {
+    font-size: 0.9rem;
+    padding: 0.8rem;
+  }
+  header {
+    background: rgba(5, 9, 6, 0.4); /* Transparent background */
+    color: rgb(11, 5, 5);
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5); /* Adding a subtle border to make it more attractive */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Adding a shadow to lift the header */
+    backdrop-filter: blur(10px); /* Blurring the background behind the header */
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+  .glassy-heading {
+    color: black; /* Make text black */
+    font-size: 2.5rem; /* Adjust font size if needed */
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  

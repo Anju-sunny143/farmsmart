@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FarmSmart - Smart Crop Advisory</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <!-- Your header content (e.g., logo, etc.) -->
+  </header>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <h1>FarmSmart</h1>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="p1.html">Products</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="weather.html">Weather</a></li>
+      <li><a href="register.html">Login</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Section with Hero Banner -->
+  <main>
+    <section class="hero">
+      <h2>Welcome to FarmSmart</h2>
+      <p>Empowering smarter harvests — with real-time weather insights and crop recommendations tailored for your land</p>
+    </section>
+
+    <!-- Registration Success Message -->
+    <section id="registration-success" class="info-section" style="display:none;">
+      <h2>Registration Successful!</h2>
+      <p>Congratulations! You have successfully registered with FarmSmart. Now, let's start using real-time weather insights and crop recommendations tailored for your farm.</p>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="info-section">
+      <h2>About FarmSmart</h2>
+      <p>
+        <strong>FarmSmart</strong> is a cutting-edge <strong>weather-based crop advisory system</strong> designed to empower farmers with timely, location-specific insights. 
+        Our mission is to transform traditional farming into smart, data-driven agriculture using technology that’s both powerful and easy to use.
+      </p>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="info-section">
+      <h2>Key Features</h2>
+      <ul>
+        <li><strong>Real-time Weather Data:</strong> Stay up-to-date with weather conditions in your region.</li>
+        <li><strong>Personalized Crop Recommendations:</strong> Get crop suggestions tailored to your location and weather.</li>
+        <li><strong>User Dashboard:</strong> Track your crop history and gain insights into weather trends and crop performance.</li>
+        <li><strong>Easy Access:</strong> Access all features through an intuitive, user-friendly interface.</li>
+        <li><strong>Pest & Disease Alert System:</strong> Receive real-time alerts on common pests/diseases and control recommendations based on weather and region.</li>
+        <li><strong>AI-Based Crop Yield Prediction:</strong> Leverage machine learning to forecast crop yields based on past trends, weather data, soil health, and farm inputs.</li>
+      </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="info-section">
+      <h2>Contact Us</h2>
+      <p>If you have any questions or need help, feel free to reach out to us:</p>
+      <ul>
+        <li>Email: <a href="mailto:support@farmsmart.com">support@farmsmart.com</a></li>
+        <li>Phone: +1 (800) 123-4567</li>
+        <li>Follow us on social media:
+          <ul>
+            <li><a href="https://www.youtube.com/@AgriTechTelugu" class="social-link">Youtube</a></li>
+            <li><a href="https://x.com/AgriTechTelugu" class="social-link">Twitter</a></li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2025 FarmSmart. All rights reserved.</p>
+    <p>Developed with 💚 for smarter farming.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    // Check URL parameters for registration success
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get('registration') === 'success') {
+      document.getElementById('registration-success').style.display = 'block';
+    }
+  </script>
+</body>
+</html>
